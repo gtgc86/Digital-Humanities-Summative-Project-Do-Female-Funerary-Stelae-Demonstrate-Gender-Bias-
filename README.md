@@ -25,4 +25,3 @@ The Repositary Includes a Spyral notebook from voyant tools which contains two d
 2. Voyant Tools HTML Code
 3. Voyant Tools Female Corpus Link
 4. Voyant Tools Male Corpus Link
-5. Voyant Tools Main Corpus Link 

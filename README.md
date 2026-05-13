@@ -10,6 +10,8 @@ The Repositary Includes a Spyral notebook from voyant tools which contains two d
 
 *-Main*
 1. READ.me
+2. Recogito *Shortcut*
+3. Voyant Tools Spyral Notebook *Shortcut*
 
 *-Recogitio*
 1. JSON Code

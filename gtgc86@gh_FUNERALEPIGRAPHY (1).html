@@ -1,0 +1,1387 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset='UTF-8'>
+<title>Digital Humanities Summative project: Female Funerary Epigraphy</title>
+<meta name="title" content="Digital Humanities Summative project: Female Funerary Epigraphy"><meta name="userId" content="gtgc86@gh"><meta name="author" content="gtgc86"><meta name="modified" content="2026-05-12T18:31:40.430Z"><meta name="created" content="2026-05-07T14:49:58.393Z"><meta name="version" content="0.1"><link rel="stylesheet" type="text/css" href="https://voyant-tools.org/resources/codemirror/lib/codemirror.css"><link rel="stylesheet" type="text/css" href="https://voyant-tools.org/resources/spyral/css/codemirror.css"><link rel="stylesheet" type="text/css" href="https://voyant-tools.org/resources/spyral/css/spyral.css"><link rel="stylesheet" type="text/css" href="https://voyant-tools.org/resources/spyral/css/dataviewer.css"></head>
+<body class='exported-notebook'>
+<header class='spyral-header'><div class='title'>Digital Humanities Summative project: Female Funerary Epigraphy</div><div class='author'>gtgc86</div></header>
+<article class='spyralArticle'>
+<section id='dq1fu34w' class='notebook-editor-wrapper notebooktexteditorwrapper'>
+<div class='notebookwrappercounter'>1</div><div class='notebook-text-editor'><p>You can use this as a base to create your own notebook. The first code cell below loads your corpus and assigns it to a variable. The second uses the corpus variable to invoke a tool.</p><p>Don't forget to save your changes by clicking on the cloud icon!</p></div>
+</section>
+<section id='cvb6h350' class='notebook-editor-wrapper notebookcodeeditorwrapper'>
+<div class='notebookwrappercounter'>2</div><div class='notebook-code-editor'>
+<div class="CodeMirror cm-s-default CodeMirror-wrap" style="min-height: 51px; height: auto;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 34px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" style="min-height: 51px;"><div class="CodeMirror-sizer" style="margin-left: 30px; margin-bottom: -15px; border-right-width: 35px; min-height: 25px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 17px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -30px; width: 30px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">loadCorpus</span>(<span class="cm-string">"6f23b5e9cf42bc3b10d1e1b01e437111"</span>).<span class="cm-property">assign</span>(<span class="cm-string">"myCorpus"</span>);</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 35px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="height: 60px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div>
+</div>
+<pre class='notebook-code-editor-raw editor-mode-javascript'>loadCorpus("6f23b5e9cf42bc3b10d1e1b01e437111").assign("myCorpus");</pre>
+<div class='notebook-code-results'>
+<div class="spyral-dv-container static"><span class="spyral-dv-content" style="margin-left: 0px;"><span class="spyral-dv-left spyral-dv-folder">myCorpus: <span class="spyral-dv-type">Object</span><span class="spyral-dv-length">{1}</span> <span class="spyral-dv-folder-icon spyral-dv-collapsed"><svg width="8" height="8" class="open"><path d="M4 7L0 1h8z" fill="#000"></path></svg><svg width="8" height="8" class="closed"><path d="M7 4L1 8V0z" fill="#000"></path></svg></span></span><span class="spyral-dv-Object spyral-dv-right spyral-dv-collapsed"><span class="spyral-dv-content" style="margin-left: 0px;"><span class="spyral-dv-left">corpusid:&nbsp;</span><span class="spyral-dv-String spyral-dv-right">"6f23b5e9cf42bc3b10d1e1b01e437111"</span></span></span></span></div>
+</div>
+</section>
+<section id='opdtqolu' class='notebook-editor-wrapper notebookcodeeditorwrapper'>
+<div class='notebookwrappercounter'>3</div><div class='notebook-code-editor'>
+<div class="CodeMirror cm-s-default CodeMirror-wrap" style="min-height: 51px; height: auto;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 598.719px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" style="min-height: 51px;"><div class="CodeMirror-sizer" style="margin-left: 30px; margin-bottom: -15px; border-right-width: 35px; min-height: 25px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 568.719px; top: 0px; height: 17px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -30px; width: 30px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">myCorpus</span>.<span class="cm-property">tool</span>(<span class="cm-string">"corpusset"</span>,{<span class="cm-string cm-property">"panels"</span>:<span class="cm-string">"cirrus,summary,trends,summary,contexts"</span>});</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 35px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="height: 60px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div>
+</div>
+<pre class='notebook-code-editor-raw editor-mode-javascript'>myCorpus.tool("corpusset",{"panels":"cirrus,summary,trends,summary,contexts"});</pre>
+<div class='notebook-code-results'>
+<body class=""><iframe style="width: 100%; height: 450px;" src="https://voyant-tools.org/tool/corpusset/?corpus=6f23b5e9cf42bc3b10d1e1b01e437111&amp;forTool=corpusset&amp;panels=cirrus%2Csummary%2Ctrends%2Csummary%2Ccontexts"></iframe></body>
+</div>
+</section>
+<section id='i8xkotlc' class='notebook-editor-wrapper notebookcodeeditorwrapper'>
+<div class='notebookwrappercounter'>4</div><div class='notebook-code-editor'>
+<div class="CodeMirror cm-s-default CodeMirror-wrap" style="min-height: 51px; height: auto;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 34px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" style="min-height: 51px;"><div class="CodeMirror-sizer" style="margin-left: 30px; margin-bottom: -15px; border-right-width: 35px; min-height: 25px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 17px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -30px; width: 30px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">loadCorpus</span>(<span class="cm-string">"86d3f6f8d19a29aa9e4759097004e95b"</span>).<span class="cm-property">assign</span>(<span class="cm-string">"myCorpus"</span>);</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 35px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="height: 60px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div>
+</div>
+<pre class='notebook-code-editor-raw editor-mode-javascript'>loadCorpus("86d3f6f8d19a29aa9e4759097004e95b").assign("myCorpus");</pre>
+<div class='notebook-code-results'>
+<div class="spyral-dv-container static"><span class="spyral-dv-content" style="margin-left: 0px;"><span class="spyral-dv-left spyral-dv-folder">myCorpus: <span class="spyral-dv-type">Object</span><span class="spyral-dv-length">{1}</span> <span class="spyral-dv-folder-icon spyral-dv-collapsed"><svg width="8" height="8" class="open"><path d="M4 7L0 1h8z" fill="#000"></path></svg><svg width="8" height="8" class="closed"><path d="M7 4L1 8V0z" fill="#000"></path></svg></span></span><span class="spyral-dv-Object spyral-dv-right spyral-dv-collapsed"><span class="spyral-dv-content" style="margin-left: 0px;"><span class="spyral-dv-left">corpusid:&nbsp;</span><span class="spyral-dv-String spyral-dv-right">"86d3f6f8d19a29aa9e4759097004e95b"</span></span></span></span></div>
+</div>
+</section>
+<section id='bsysyf13' class='notebook-editor-wrapper notebookcodeeditorwrapper'>
+<div class='notebookwrappercounter'>5</div><div class='notebook-code-editor'>
+<div class="CodeMirror cm-s-default CodeMirror-wrap" style="min-height: 51px; height: auto;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 21px; left: 34px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" style="min-height: 51px;"><div class="CodeMirror-sizer" style="margin-left: 30px; margin-bottom: -15px; border-right-width: 35px; min-height: 42px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like">x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"><div class="CodeMirror-selected" style="position: absolute; left: 339.969px; top: 0px; width: 7.17188px; height: 17px;"></div></div><div class="CodeMirror-cursors" style=""></div><div class="CodeMirror-code" role="presentation"><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">myCorpus</span>.<span class="cm-property">tool</span>(<span class="cm-string">"corpusset"</span>,{<span class="cm-string cm-property">"stopList"</span>:<span class="cm-string">"keywords-548b4ffa46587026d838b2b56642a9f5"</span>,<span class="cm-string cm-property">"panels"</span>:<span class="cm-string">"cirrus,reader,documentterms,documents,contexts"</span>});</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 35px; width: 1px; border-bottom: 0px solid transparent; top: 42px;"></div><div class="CodeMirror-gutters" style="height: 77px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div>
+</div>
+<pre class='notebook-code-editor-raw editor-mode-javascript'>myCorpus.tool("corpusset",{"stopList":"keywords-548b4ffa46587026d838b2b56642a9f5","panels":"cirrus,reader,documentterms,documents,contexts"});</pre>
+<div class='notebook-code-results'>
+<body class=""><iframe style="width: 100%; height: 450px;" src="https://voyant-tools.org/tool/corpusset/?corpus=86d3f6f8d19a29aa9e4759097004e95b&amp;forTool=corpusset&amp;stopList=keywords-548b4ffa46587026d838b2b56642a9f5&amp;panels=cirrus%2Creader%2Cdocumentterms%2Cdocuments%2Ccontexts"></iframe></body>
+</div>
+</section>
+<section id='fatm6ovt' class='notebook-editor-wrapper notebooktexteditorwrapper'>
+<div class='notebookwrappercounter'>6</div><div class='notebook-text-editor'><p>This Corpus was made with the intention that it will contrast&nbsp;&nbsp;</p></div>
+</section>
+<section id='zqm7qie1' class='notebook-editor-wrapper notebookcodeeditorwrapper'>
+<div class='notebookwrappercounter'>7</div><div class='notebook-code-editor'>
+<div class="CodeMirror cm-s-default CodeMirror-wrap" style="min-height: 51px; height: auto;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 34px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" style="min-height: 51px;"><div class="CodeMirror-sizer" style="margin-left: 30px; margin-bottom: -15px; border-right-width: 35px; min-height: 110px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>6</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 17px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -30px; width: 30px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">loadCorpus</span>(<span class="cm-variable">xmlData</span>, {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">xmlContentXpath</span>: <span class="cm-string">"//speech"</span>, <span class="cm-comment">// Identifies where the content is</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">xmlDocumentsXpath</span>: <span class="cm-string">"//speech"</span>, <span class="cm-comment">// Identifies what are to be the documents</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">xmlGroupByXpath</span>: <span class="cm-string">"//speech/@name"</span>, <span class="cm-comment">// Identifies what to use to group the documents</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">xmlTitleXpath</span>: <span class="cm-string">"//speech/@name"</span> <span class="cm-comment">// Identifies what to use to title the documents</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  }).<span class="cm-property">assign</span>(<span class="cm-string">"myCorpus"</span>);</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 35px; width: 1px; border-bottom: 0px solid transparent; top: 110px;"></div><div class="CodeMirror-gutters" style="height: 145px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div>
+</div>
+<pre class='notebook-code-editor-raw editor-mode-javascript'>loadCorpus(xmlData, {
+  xmlContentXpath: "//speech", // Identifies where the content is
+  xmlDocumentsXpath: "//speech", // Identifies what are to be the documents
+  xmlGroupByXpath: "//speech/@name", // Identifies what to use to group the documents
+  xmlTitleXpath: "//speech/@name" // Identifies what to use to title the documents
+  }).assign("myCorpus");</pre>
+<div class='notebook-code-results'>
+<body class=""><div class="error"><strong>ReferenceError: xmlData is not defined</strong><pre><span style="cursor:pointer;text-decoration:underline;" onclick="this.nextElementSibling.style.display='block';this.style.display='none';">Details</span><span style="display:none;">ReferenceError: xmlData is not defined
+    at eval (eval at &lt;anonymous&gt; (https://voyant-tools.org/resources/spyral/sandbox.js:324:20), <anonymous>:1:12)
+    at eval (<anonymous>)
+    at https://voyant-tools.org/resources/spyral/sandbox.js:324:20
+    at <anonymous></anonymous></anonymous></anonymous></span></pre></div></body>
+</div>
+</section>
+<section id='mb5p5skz' class='notebook-editor-wrapper notebookdatawrapper'>
+<div class='notebookwrappercounter'>8</div><div class='notebook-code-editor'>
+<div class="CodeMirror cm-s-default CodeMirror-wrap" style="min-height: 51px; height: auto;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 43px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 27854px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" style="min-height: 51px;"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: -15px; border-right-width: 35px; min-height: 27854px; padding-right: 15px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1304</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 17px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -39px; width: 39px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">rdf:RDF</span> <span class="cm-attribute">xmlns:dcterms</span>=<span class="cm-string">"http://purl.org/dc/terms/"</span> <span class="cm-attribute">xmlns:oa</span>=<span class="cm-string">"http://www.w3.org/ns/oa#"</span> <span class="cm-attribute">xmlns:rdf</span>=<span class="cm-string">"http://www.w3.org/1999/02/22-rdf-syntax-ns#"</span> <span class="cm-attribute">xmlns:cnt</span>=<span class="cm-string">"http://www.w3.org/2011/content#"</span> <span class="cm-attribute">xmlns:pelagios</span>=<span class="cm-string">"http://pelagios.github.io/vocab/terms#"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:Annotation</span> <span class="cm-attribute">rdf:about</span>=<span class="cm-string">"https://recogito.pelagios.org/document/bteaxogy9slji3#520cc902-9537-43eb-8d1b-1bb4debc6fa0"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:hasBody</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:Tag</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:created</span><span class="cm-tag cm-bracket">&gt;</span>2026-05-12T12:42:15+00:00<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:created</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:creator</span><span class="cm-tag cm-bracket">&gt;</span>ellenpep<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:creator</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">cnt:chars</span><span class="cm-tag cm-bracket">&gt;</span>Mother<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">cnt:chars</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">oa:Tag</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">oa:hasBody</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:hasBody</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:Tag</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:created</span><span class="cm-tag cm-bracket">&gt;</span>2026-05-12T12:42:15+00:00<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:created</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:creator</span><span class="cm-tag cm-bracket">&gt;</span>ellenpep<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:creator</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">cnt:chars</span><span class="cm-tag cm-bracket">&gt;</span>8<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">cnt:chars</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">oa:Tag</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">oa:hasBody</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:hasTarget</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">pelagios:AnnotatedThing</span> <span class="cm-attribute">rdf:about</span>=<span class="cm-string">"https://recogito.pelagios.org/document/bteaxogy9slji3"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:description</span><span class="cm-tag cm-bracket">&gt;</span>Adding to a previously established corpus, this recogito document looks to annotate specific iconography themes which provide further evidence to the project <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:description</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:date</span><span class="cm-tag cm-bracket">&gt;</span>10.05/26<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:date</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:creator</span><span class="cm-tag cm-bracket">&gt;</span>Ellen Pepperill<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:creator</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:title</span><span class="cm-tag cm-bracket">&gt;</span>Female Funerary Monuments<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:title</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">pelagios:AnnotatedThing</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">24</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">oa:hasTarget</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">25</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">oa:Annotation</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">26</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:Annotation</span> <span class="cm-attribute">rdf:about</span>=<span class="cm-string">"https://recogito.pelagios.org/document/bteaxogy9slji3#aa857d64-8a48-4951-965f-1be5660913be"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">27</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:hasBody</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">28</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:Tag</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">29</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:created</span><span class="cm-tag cm-bracket">&gt;</span>2026-05-12T12:53:11+00:00<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:created</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">30</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:creator</span><span class="cm-tag cm-bracket">&gt;</span>ellenpep<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:creator</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">31</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">cnt:chars</span><span class="cm-tag cm-bracket">&gt;</span>accompanied<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">cnt:chars</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">32</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">oa:Tag</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">33</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">oa:hasBody</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">34</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:hasTarget</span> <span class="cm-attribute">rdf:resource</span>=<span class="cm-string">"https://recogito.pelagios.org/document/bteaxogy9slji3"</span><span class="cm-tag cm-bracket">/&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">35</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">oa:Annotation</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">36</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:Annotation</span> <span class="cm-attribute">rdf:about</span>=<span class="cm-string">"https://recogito.pelagios.org/document/bteaxogy9slji3#c67a09f1-4b78-4670-85f4-c3def4d242a4"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">37</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:hasBody</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">38</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:Tag</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">39</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:created</span><span class="cm-tag cm-bracket">&gt;</span>2026-05-12T12:55:42+00:00<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:created</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">40</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:creator</span><span class="cm-tag cm-bracket">&gt;</span>ellenpep<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:creator</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">41</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">cnt:chars</span><span class="cm-tag cm-bracket">&gt;</span>accompanied<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">cnt:chars</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">42</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">oa:Tag</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">43</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">oa:hasBody</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">44</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:hasBody</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">45</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:Tag</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">46</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:created</span><span class="cm-tag cm-bracket">&gt;</span>2026-05-12T12:23:52+00:00<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:created</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">47</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:creator</span><span class="cm-tag cm-bracket">&gt;</span>ellenpep<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:creator</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">48</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">cnt:chars</span><span class="cm-tag cm-bracket">&gt;</span>Seated<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">cnt:chars</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">49</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">oa:Tag</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">50</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">oa:hasBody</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">51</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:hasBody</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">52</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:Tag</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">53</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:created</span><span class="cm-tag cm-bracket">&gt;</span>2026-05-12T12:23:52+00:00<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:created</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">54</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:creator</span><span class="cm-tag cm-bracket">&gt;</span>ellenpep<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:creator</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">55</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">cnt:chars</span><span class="cm-tag cm-bracket">&gt;</span>Modest<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">cnt:chars</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">56</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">oa:Tag</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">57</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">oa:hasBody</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">58</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:hasBody</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">59</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:Tag</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">60</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:created</span><span class="cm-tag cm-bracket">&gt;</span>2026-05-12T12:23:52+00:00<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:created</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">61</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:creator</span><span class="cm-tag cm-bracket">&gt;</span>ellenpep<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:creator</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">62</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">cnt:chars</span><span class="cm-tag cm-bracket">&gt;</span>Mother<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">cnt:chars</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">63</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">oa:Tag</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">64</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">oa:hasBody</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">65</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:hasBody</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">66</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">oa:Tag</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">67</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:created</span><span class="cm-tag cm-bracket">&gt;</span>2026-05-12T12:23:52+00:00<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:created</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">68</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dcterms:creator</span><span class="cm-tag cm-bracket">&gt;</span>ellenpep<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dcterms:creator</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">69</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">cnt:chars</span><span class="cm-tag cm-bracket">&gt;</span>Family<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">cnt:chars</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 30px;">70</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">oa:Tag</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 35px; width: 1px; border-bottom: 0px solid transparent; top: 27854px;"></div><div class="CodeMirror-gutters" style="height: 27889px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 38px;"></div></div></div></div>
+</div>
+<pre class='notebook-code-editor-raw editor-mode-xml'><rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cnt="http://www.w3.org/2011/content#" xmlns:pelagios="http://pelagios.github.io/vocab/terms#">
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#520cc902-9537-43eb-8d1b-1bb4debc6fa0">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:42:15+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Mother</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:42:15+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>8</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget>
+<pelagios:AnnotatedThing rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3">
+<dcterms:description>Adding to a previously established corpus, this recogito document looks to annotate specific iconography themes which provide further evidence to the project </dcterms:description>
+<dcterms:date>10.05/26</dcterms:date>
+<dcterms:creator>Ellen Pepperill</dcterms:creator>
+<dcterms:title>Female Funerary Monuments</dcterms:title>
+</pelagios:AnnotatedThing>
+</oa:hasTarget>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#aa857d64-8a48-4951-965f-1be5660913be">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:53:11+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#c67a09f1-4b78-4670-85f4-c3def4d242a4">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:55:42+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:23:52+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Seated</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:23:52+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:23:52+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Mother</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:23:52+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Family</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:23:52+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Daughter</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#ea08d759-4edf-4232-b098-3bb5e95072ed">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:34:48+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>1</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:08:20+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Mother</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#bed58f78-8160-4bf0-805b-6bb48a6cd56c">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:36:32+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:36:32+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>3</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#cb51c3a6-8bb9-4cec-a2fa-16e3fc1e0b61">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:41:13+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>7</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:41:13+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Marriage</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#6ef58779-984f-4b0e-bf8a-479a87a56a34">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:26:30+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Mother</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:26:30+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>1</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#59d686bf-f44e-40d3-ba53-363f4cd0e3bb">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:55:29+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:21:18+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Domestic Activities</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:21:18+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:21:18+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Seated</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#418e1d9a-5982-4fb2-8574-336b9e0de0db">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:43:23+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:43:23+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>9</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#5d4eae0a-a437-4895-87f2-a18ae31dc462">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:40:44+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>6</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:40:44+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Mother</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#ae4bc87b-8cbf-4f36-b362-14b1bc588c0b">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:55:07+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:18:15+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Children</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:18:15+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Seated</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:18:15+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:18:15+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Mother</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#2bfd5736-e3bf-4c59-8530-e339725d6708">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:55:37+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:23:22+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Wife</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:23:22+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:23:22+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Seated</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#1bbb630e-27c8-45ed-b519-87de45fc79de">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:55:12+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:18:43+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Family</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:18:43+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Daughter</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:18:43+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Mother</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#1e9a7ba3-115c-47db-a4ec-9bb52e1cf934">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:42:45+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Marriage</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:42:45+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>8</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#8e1a9aef-5267-49d4-867b-272c0fbef6ee">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:54:36+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#c6f72d87-b503-42ba-985f-3560092578fa">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:26:17+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:26:17+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>1</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#8ba31df1-175a-42ea-ad9e-29f28e128a3c">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:12:37+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Daughter</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#69461ccc-21d5-48d3-ae46-5354a0eedc9d">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:42:53+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Family</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:42:53+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>8</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#ddbe7ce8-9e22-4c15-a123-a483365f0073">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:35:42+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>2</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:35:42+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#638d41f9-4ae2-4803-9938-5e1c84497941">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:34:16+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>1</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:06:50+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Infant</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#b43c2e83-db5c-4065-8ec9-1008980e647f">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:39:05+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>5</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:39:05+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Daughter</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#5638eba9-d5ee-482d-b5ec-3937819c3537">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:34:28+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>1</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:26:49+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Seated</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#52620ca1-a10e-4e11-9d1a-ac1c2f33302c">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:42:38+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:42:38+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>8</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#ba2d3471-4218-4638-b4d5-aa8696fe30ca">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:42:08+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Daughter</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:42:08+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>8</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#2122e393-d111-4d7a-a89e-963a3feb6310">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:40:08+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>6</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:40:03+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Children</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#7988bb5d-7947-4695-92a6-c5ef88dfbcbc">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:53:20+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:38:35+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Marriage</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:38:35+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>4</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#9dc5a68e-4bbe-41c0-9484-d408a2f58ad4">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:39:48+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:39:48+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>6</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#c74c48c2-fd53-4361-b403-d3f32297c642">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:09:17+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Votive</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:37:05+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>3</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#cb8550f8-367d-4e39-a6cd-f3e2422841e8">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:41:35+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:41:35+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>7</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#03f5d79f-fb0b-4eca-af8c-281a0ccce821">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:14:18+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Seated</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:43:17+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>9</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#fe33cc4d-f272-49b4-85ac-12232bb88ede">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:52:53+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Alone</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#da0e862b-95e5-4c2a-8e0d-f52548fdea93">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:32:53+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:32:53+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>1</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#1bca13dc-c5a3-4008-b491-d66981d79ebf">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:40:17+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>6</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:40:17+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Family</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#dae02d60-3857-4ed4-99d6-e83fdd0d313d">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:34:58+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Children</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:36:06+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>2</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#14419ffd-5469-487b-8c8d-a2c17763a2f8">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:53:07+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#a58ebe2e-176f-46df-9c49-2d3e3bcdc297">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:35:22+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:36:00+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>2</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#74111481-4d8e-4660-ad03-14d2273bd0da">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:54:21+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#32bab54d-cb67-429b-b6e8-415d89056f62">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:39:38+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>5</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:39:38+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Family</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#2def85bf-a099-4f2e-bcad-478bb4548c4f">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:38:55+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>5</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:38:55+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Wife</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#ec73ab14-b718-4319-a22c-47946eef8228">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:39:10+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>5</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:39:10+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#26f810ef-a12c-4279-8511-d983db6a3bf2">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:38:19+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>4</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:10:16+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#a5e5ad46-4d23-4027-adf9-0f569c481f0a">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:53:58+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#42645791-2b2a-46b5-9209-87edd516440d">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:37:20+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Daughter</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:37:20+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>3</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#6a4e573f-65b4-4f6f-8563-b87b8c25bd5a">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:34:11+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>1</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:34:11+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Unknown Woman</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#6b967fee-de88-4af0-82ea-6f1dd643c2de">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:40:51+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>6</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:40:51+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Wife</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#60eeeea1-fd91-45f7-8aec-fc9bc917eb8a">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:55:34+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:19:36+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Unknown Woman</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:19:36+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Slave</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:19:36+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>jewellery</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:19:36+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Seated</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:19:36+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#e326dd97-dd08-4ce2-ac57-948b8cd23542">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:54:57+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:14:54+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Domestic Activity</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:14:54+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Slave</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:14:54+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#9f4613fe-e20d-4fd7-b317-6c813fd0f6c2">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:37:40+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Marriage</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:37:40+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>3</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#aabde084-16b3-48e7-bb6b-2a9b18d187b2">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:54:46+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:15:52+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:15:52+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Daughter</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:15:52+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Mother</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:15:52+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Family</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#254dce8d-f09a-4d88-a7d7-7b9540c3fd9c">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:42:03+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Seated</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:42:03+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>8</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#c2f4506b-7fd4-41ef-907e-9d778ed51783">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:55:15+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:19:55+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Unknown Woman</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:18:59+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Seated</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:18:59+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#b2b33a57-7870-483e-a47b-8315e7b57d59">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:54:51+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:17:31+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Mother</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:17:31+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Unknown man</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:17:31+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Children</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:17:31+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:17:31+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Seated</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#aff99dff-6d6a-4f03-85e4-6a3f4c78f1ac">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:43:29+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Unknown man</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:43:29+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>9</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#0df73817-4742-47fa-b42a-eff7d6b6633e">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:24:38+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Alone</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:15:15+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Seated</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:15:15+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:15:15+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Infant</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:15:15+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Mother</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#064dd80a-98a1-4d99-b05c-569c6e51b68f">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:39:56+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>6</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:39:56+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Seated</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#ad05fdc2-c293-475d-9168-c4263c7703a5">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:55:24+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:22:48+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Wife</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:22:36+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:22:36+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Marriage</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:22:36+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Pet</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#e754749e-57e0-45d7-bb3b-a891d7803af4">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:24:08+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Alone</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:24:08+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Modest</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:24:08+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Seated</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#76b9cbbc-da01-4b41-a842-e3e21ce760fa">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:35:11+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Unknown man</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:35:53+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>2</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#a723277c-8f8a-43d8-bb1d-66e231b68e36">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:41:07+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>7</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:41:07+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Family</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#f3ad7311-568d-437d-a9d3-b2616ca19865">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:41:00+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Seated</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:41:00+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>7</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#ed71bcb9-ce59-4e3c-82f6-912f3d81125d">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:43:04+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Domestic Activities</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:43:04+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>8</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#f505bf63-e0c6-4ef4-8e26-8f4c58da6413">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:55:20+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>accompanied</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:22:11+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Domestic Activities</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:22:11+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Seated</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:22:11+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Pet</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:22:11+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Children</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+<oa:Annotation rdf:about="https://recogito.pelagios.org/document/bteaxogy9slji3#e6dffa3d-adfd-4d78-b8f6-200864a7dbd2">
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:39:31+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>5</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasBody>
+<oa:Tag>
+<dcterms:created>2026-05-12T12:39:31+00:00</dcterms:created>
+<dcterms:creator>ellenpep</dcterms:creator>
+<cnt:chars>Marriage</cnt:chars>
+</oa:Tag>
+</oa:hasBody>
+<oa:hasTarget rdf:resource="https://recogito.pelagios.org/document/bteaxogy9slji3"/>
+</oa:Annotation>
+</rdf:RDF></pre>
+<div class='notebook-code-results'>
+<body class="">
+	
+</body>
+</div>
+</section>
+</article>
+<footer class='spyral-footer'>&copy; gtgc86. Notebook Created 7 May 2026. Notebook Modified 12 May 2026.</footer>
+</body>
+</html>
